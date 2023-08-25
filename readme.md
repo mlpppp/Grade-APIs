@@ -43,7 +43,7 @@ docker run --name grade-api-container --restart=on-failure --detach \
 
 ### Run APIs Locally
 ALternatively, if you have installed Java 17(corretto), you can run the Spring Boot applicaiton locally 
-- You need to change the database endpoint
+- You need to change the database connect string
 ```bash
 # /src/main/resources/application.properties
 # change line: previous
@@ -65,5 +65,5 @@ But running Spring boot locally you can run
 - API description will be available in [SwaggerUI](http://localhost:8088/swagger-ui/index.html#/)
 
 ### Authentiation
-You can use `User APIs` described in [SwaggerUI](http://localhost:8088/swagger-ui/index.html#/) to register/login as user and then use barer Token to access the rest of the APIs.
+You can use `User APIs` described in [SwaggerUI](http://localhost:8088/swagger-ui/index.html#/) to register/login as user and then use bearer Token to access the rest of the APIs.
 
